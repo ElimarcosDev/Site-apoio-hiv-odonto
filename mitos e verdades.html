@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início - Manifestações Orais do HIV</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Mitos e Verdades - Manifestações Orais do HIV</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="midia.css">
+
     <link rel="icon" href="https://images.vexels.com/media/users/3/152018/isolated/lists/c728796e46fb111cce09ffd324a40949-icone-de-dente-colorido.png" type="image/x-icon">
 </head>
 <body>
@@ -17,100 +18,95 @@
     <header>
         <nav>
             <div class="logo">Manifestações Orais do HIV</div>
-            <span onclick="clickmenu()" id="bur" class="material-symbols-outlined">
-                    menu
-            </span>
+
+            <button onclick="clickmenu()" id="bur" class="material-symbols-outlined" aria-label="Abrir menu de navegação">
+                menu
+            </button>
+
             <menu id="itens">
                 <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="imunologia.html">Imunologia</a></li>
-                <li><a href="manifestacoes.html">Manifestações</a></li>
-                <li><a href="mitos e verdades.html">Mitos/Verdades</a></li>
-                <li><a href="implicacoes.html">Implicações</a></li>
-                <li><a href="ajuda.html">Apoio</a></li>
-                <li><a href="equipe.html">Equipe</a></li>
-                <li><a href="referencias.html">Recursos</a></li>
-            </ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="imunologia.html">Imunologia</a></li>
+                    <li><a href="manifestacoes.html">Manifestações</a></li>
+                    <li><a href="mitos e verdades.html" class="active">Mitos/Verdades</a></li>
+                    <li><a href="implicacoes.html">Implicações</a></li>
+                    <li><a href="ajuda.html">Apoio</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="referencias.html">Recursos</a></li>
+                </ul>
             </menu>
-            
         </nav>
     </header>
 
     <main>
-         <div class="container">
-        <main>
+        <section class="container">
             <h2>Mitos e Verdades sobre HIV, AIDS e Saúde Oral</h2>
-            <p>A desinformação ainda é uma das maiores barreiras no combate ao HIV e no tratamento de pessoas vivendo com o vírus. Esclarecer os fatos é crucial para a saúde pública e para o combate ao estigma.</p>
+            <p>
+                A desinformação ainda é uma das maiores barreiras no combate ao HIV e no tratamento de pessoas vivendo com o vírus. Esclarecer os fatos é essencial para a saúde pública e para o combate ao estigma.
+            </p>
 
             <div class="myth-truth-card myth-myth">
-                <h3>MITO: Qualquer lesão oral em um paciente soropositivo significa que ele tem AIDS.</h3>
-                <p><strong>FALSO.</strong> A presença de lesões orais, como Candidíase, indica a infecção pelo HIV e a queda da imunidade, mas não define obrigatoriamente o diagnóstico de AIDS (que é definido pela contagem de CD4 abaixo de 200 células/mm³ ou a presença de doenças definidoras específicas). Com tratamento eficaz, muitas lesões desaparecem.</p>
+                <h3>MITO: Qualquer lesão oral em uma pessoa vivendo com HIV significa que ela tem AIDS.</h3>
+                <p><strong>FALSO.</strong> A presença de lesões orais, como a candidíase, pode indicar infecção pelo HIV e queda da imunidade, mas não define, por si só, o diagnóstico de AIDS. A AIDS é caracterizada por contagem de CD4 abaixo de 200 células/mm³ e/ou pela presença de doenças definidoras específicas. Com tratamento eficaz, muitas dessas lesões desaparecem.</p>
             </div>
 
             <div class="myth-truth-card myth-truth">
-                <h3>VERDADE: A saúde bucal precária e o tabagismo aceleram o aparecimento de lesões.</h3>
-                <p><strong>CORRETO.</strong> Fatores como a falta de higiene bucal e o uso de tabaco são cofatores que podem agravar ou precipitar o aparecimento de manifestações orais relacionadas ao HIV, como as doenças periodontais (GUN/PUN) e a Leucoplasia Pilosa Oral. O dentista reforça a importância de hábitos saudáveis.</p>
+                <h3>VERDADE: A saúde bucal precária e o tabagismo podem acelerar o aparecimento de lesões.</h3>
+                <p><strong>CORRETO.</strong> Fatores como a falta de higiene bucal e o uso de tabaco são cofatores que podem agravar ou precipitar manifestações orais relacionadas ao HIV, como doenças periodontais (GUN/PUN) e leucoplasia pilosa oral. O dentista tem papel importante na orientação sobre hábitos saudáveis.</p>
             </div>
 
             <div class="myth-truth-card myth-myth">
                 <h3>MITO: Pessoas com HIV não podem fazer tratamento odontológico de rotina.</h3>
-                <p><strong>FALSO.</strong> Pessoas vivendo com HIV podem e devem receber todo tipo de tratamento odontológico. As precauções padrão de biossegurança (luvas, máscaras, esterilização) são universais e protegem tanto o paciente quanto a equipe, independentemente do status sorológico.</p>
+                <p><strong>FALSO.</strong> Pessoas vivendo com HIV podem e devem receber todo tipo de tratamento odontológico. As precauções padrão de biossegurança (luvas, máscaras, esterilização) são universais e protegem tanto pacientes quanto profissionais, independentemente do status sorológico.</p>
             </div>
 
             <div class="myth-truth-card myth-truth">
-                <h3>VERDADE: A Candidíase oral pode ser um sinal de que o HIV está avançando.</h3>
-                <p><strong>CORRETO.</strong> A Candidíase Pseudomembranosa, em particular, é a manifestação oral mais comum e, se for persistente, pode indicar uma baixa na contagem de células T CD4+, sinalizando a progressão da imunossupressão. Por isso, o dentista é essencial no diagnóstico precoce.</p>
+                <h3>VERDADE: A candidíase oral pode ser um sinal de que o HIV está avançando.</h3>
+                <p><strong>CORRETO.</strong> A candidíase pseudomembranosa, em especial, é uma manifestação oral muito comum e, quando persistente, pode indicar baixa contagem de células T CD4+, sinalizando progressão da imunossupressão. Por isso, o exame odontológico é importante para o diagnóstico precoce.</p>
             </div>
 
             <div class="myth-truth-card myth-myth">
-                <h3>MITO: O HIV pode ser transmitido por beijo, talheres ou assento de banheiro.</h3>
-                <p><strong>FALSO.</strong> O HIV não é transmitido pelo contato social casual, como abraços, beijos de rosto, apertos de mão, compartilhamento de talheres, copos, pratos, ou por meio de saliva, suor, lágrimas e urina. A transmissão ocorre primariamente através de sexo desprotegido, compartilhamento de agulhas e de mãe para filho (sem tratamento).</p>
+                <h3>MITO: O HIV pode ser transmitido por beijo social, talheres ou assento de banheiro.</h3>
+                <p><strong>FALSO.</strong> O HIV não é transmitido por contato social casual, como abraços, aperto de mão, beijo no rosto, compartilhamento de copos, talheres, pratos, assento de banheiro, saliva, suor, lágrimas ou urina. A transmissão ocorre principalmente por sexo desprotegido, compartilhamento de agulhas e da mãe para o filho, na ausência de tratamento adequado.</p>
             </div>
             
             <div class="myth-truth-card myth-truth">
-                <h3>VERDADE: A Terapia Antirretroviral (TARV) efetiva evita a transmissão do vírus.</h3>
-                <p><strong>CORRETO.</strong> Quando uma pessoa vivendo com HIV está em tratamento e atinge a "carga viral indetectável", ela não transmite o vírus para parceiros sexuais (conceito I=I: Indetectável = Intransmissível). Isso transformou a vida de milhões de pessoas e é a principal razão para o diagnóstico e tratamento precoces.</p>
+                <h3>VERDADE: A terapia antirretroviral (TARV) eficaz impede a transmissão sexual do vírus.</h3>
+                <p><strong>CORRETO.</strong> Quando uma pessoa vivendo com HIV está em tratamento e mantém carga viral indetectável, ela não transmite o vírus para parceiros sexuais (conceito I = I: Indetectável = Intransmissível). Isso reforça a importância do diagnóstico e do início precoce da TARV.</p>
             </div>
             
             <div class="myth-truth-card myth-myth">
-                <h3>MITO: Pessoas com HIV têm o dobro de chances de ter cáries.</h3>
-                <p><strong>DEPENDE.</strong> O HIV por si só não causa mais cáries. No entanto, muitos medicamentos antirretrovirais (TARV) podem causar <strong>xerostomia (boca seca)</strong>. A falta de saliva reduz a proteção natural contra cáries, aumentando o risco. Por isso, o cuidado preventivo do dentista é crucial.</p>
+                <h3>MITO: Pessoas com HIV têm necessariamente o dobro de risco de ter cáries.</h3>
+                <p><strong>NEM SEMPRE.</strong> O HIV, por si só, não causa cáries. No entanto, alguns medicamentos antirretrovirais podem levar à <strong>xerostomia (boca seca)</strong>. A diminuição da saliva reduz a proteção natural contra cáries, aumentando o risco quando associada a dieta cariogênica e higiene bucal inadequada. Daí a importância do acompanhamento odontológico regular.</p>
             </div>
 
             <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc;">
-                <h3>Fontes de Informação Confiáveis</h3>
-                <p>Para obter informações precisas e atualizadas sobre HIV, AIDS e saúde, consulte sempre os canais oficiais:</p>
+                <h3>Fontes de informação confiáveis</h3>
+                <p>Para obter informações precisas e atualizadas sobre HIV, AIDS e saúde, consulte sempre canais oficiais:</p>
                 <ul>
-                    <li><a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hiv-aids" target="_blank"><strong>Ministério da Saúde do Brasil - Departamento de HIV/AIDS</strong></a>: Informações oficiais sobre prevenção, tratamento e políticas públicas.</li>
-                    <li><a href="https://unaids.org.br/" target="_blank"><strong>UNAIDS Brasil</strong></a>: Programa Conjunto das Nações Unidas sobre HIV/AIDS.</li>
-                    <li><a href="https://www.gov.br/saude/pt-br/canais-de-atendimento/disque-saude-136" target="_blank"><strong>Disque Saúde (136)</strong></a>: Canal gratuito e sigiloso para tirar dúvidas e buscar apoio.</li>
-                    <li><strong>Consulte um Cirurgião-Dentista</strong>: O profissional pode diagnosticar manifestações orais e orientar sobre cuidados bucais específicos.</li>
+                    <li><a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hiv-aids" target="_blank"><strong>Ministério da Saúde do Brasil</strong></a> &mdash; Informações oficiais sobre prevenção, tratamento e políticas públicas.</li>
+                    <li><a href="https://unaids.org.br/" target="_blank"><strong>UNAIDS Brasil</strong></a> &mdash; Programa Conjunto das Nações Unidas sobre HIV/AIDS.</li>
+                    <li><a href="https://www.gov.br/saude/pt-br/canais-de-atendimento/disque-saude-136" target="_blank"><strong>Disque Saúde (136)</strong></a> &mdash; Canal gratuito e sigiloso para tirar dúvidas e buscar apoio.</li>
+                    <li><strong>Cirurgião-dentista de confiança</strong> &mdash; Profissional preparado para diagnosticar manifestações orais e orientar cuidados específicos.</li>
                 </ul>
             </div>
-            </main>
-    </div>
-
-        </main>
-    </div>
+        </section>
     </main>
     
     <footer>
-        <p>&copy; 2025 - Trabalho acadêmico sobre Manifestações Orais do HIV.</p>
+        <p>&copy; 2025 &mdash; Trabalho acadêmico sobre Manifestações Orais do HIV.</p>
         <p><a href="referencias.html">Recursos e Referências</a></p>
     </footer>
 
     <script>
         function clickmenu() {
-            if (itens.style.display == 'block') {
-
-                itens.style.display = 'none'
-            } else{
-                itens.style.display = 'block'   
+            const itens = document.getElementById('itens');
+            if (itens.style.display === 'block') {
+                itens.style.display = 'none';
+            } else {
+                itens.style.display = 'block';
             }
         }
-            
-            
-
     </script>
 </body>
 </html>

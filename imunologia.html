@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imunologia - Manifestações Orais do HIV</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="midia.css">
+
     <link rel="icon" href="https://images.vexels.com/media/users/3/152018/isolated/lists/c728796e46fb111cce09ffd324a40949-icone-de-dente-colorido.png" type="image/x-icon">
 </head>
 <body>
@@ -17,22 +18,23 @@
     <header>
         <nav>
             <div class="logo">Manifestações Orais do HIV</div>
-            <span onclick="clickmenu()" id="bur" class="material-symbols-outlined">
-                    menu
-            </span>
+
+            <button onclick="clickmenu()" id="bur" class="material-symbols-outlined" aria-label="Abrir menu de navegação">
+                menu
+            </button>
+
             <menu id="itens">
                 <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="imunologia.html">Imunologia</a></li>
-                <li><a href="manifestacoes.html">Manifestações</a></li>
-                <li><a href="mitos e verdades.html">Mitos/Verdades</a></li>
-                <li><a href="implicacoes.html">Implicações</a></li>
-                <li><a href="ajuda.html">Apoio</a></li>
-                <li><a href="equipe.html">Equipe</a></li>
-                <li><a href="referencias.html">Recursos</a></li>
-            </ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="imunologia.html" class="active">Imunologia</a></li>
+                    <li><a href="manifestacoes.html">Manifestações</a></li>
+                    <li><a href="mitos e verdades.html">Mitos/Verdades</a></li>
+                    <li><a href="implicacoes.html">Implicações</a></li>
+                    <li><a href="ajuda.html">Apoio</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="referencias.html">Recursos</a></li>
+                </ul>
             </menu>
-            
         </nav>
     </header>
 
@@ -41,45 +43,66 @@
             <h2 class="white-text">Fundamentos: Aspectos Imunológicos</h2>
             
             <div class="content-text-block">
-                <h3 class="white-text">HIV vs. AIDS: Qual a Diferença?</h3>
-                <p class="white-text">O <strong>HIV</strong> (Vírus da Imunodeficiência Humana) é o vírus que, se não tratado, pode levar à <strong>AIDS</strong> (Síndrome da Imunodeficiência Adquirida). Viver com HIV hoje, graças ao tratamento, não significa ter AIDS. Uma pessoa com HIV em tratamento e carga viral indetectável pode ter uma vida plena e saudável, sem desenvolver a síndrome.</p>
+                <h3 class="white-text">HIV x AIDS: qual é a diferença?</h3>
+                <p class="white-text">
+                    O <strong>HIV</strong> (Vírus da Imunodeficiência Humana) é o agente infeccioso. Se não tratado, pode levar à <strong>AIDS</strong> (Síndrome da Imunodeficiência Adquirida), que é o estágio avançado da infecção, marcado por profunda queda da imunidade e surgimento de doenças oportunistas. 
+                    Hoje, com a TARV, muitas pessoas vivem com HIV sem desenvolver AIDS, com qualidade de vida e expectativa de vida próximas ao normal.
+                </p>
 
-                <h3 class="white-text">O Alvo do Vírus: O Linfócito T CD4+</h3>
-                <p class="white-text">O HIV não ataca todas as células do corpo, mas sim as células de defesa que são cruciais, chamadas <strong>Linfócitos T CD4+</strong>. Pense nelas como os "generais" do sistema imunológico. O vírus usa essas células para se multiplicar e, ao fazer isso, as destrói.</p>
-                <p class="white-text">A Terapia Antirretroviral (TARV) age bloqueando o ciclo de vida do vírus, permitindo que a contagem de CD4 se recupere e mantenha o sistema de defesa forte.</p>
+                <h3 class="white-text">O alvo do vírus: o linfócito T CD4+</h3>
+                <p class="white-text">
+                    O HIV tem tropismo por células de defesa específicas: os <strong>linfócitos T CD4+</strong>. Essas células funcionam como “comandantes” do sistema imunológico, coordenando a resposta contra infecções. 
+                    O vírus utiliza o CD4 para entrar na célula, replicar-se e, nesse processo, leva à destruição progressiva dessas células.
+                </p>
+                <p class="white-text">
+                    A Terapia Antirretroviral age em diferentes etapas do ciclo de vida do vírus, reduzindo sua replicação e permitindo que a contagem de CD4 se recupere ou se mantenha estável.
+                </p>
 
-                <h3 class="white-text">Os Marcadores de Saúde: CD4 e Carga Viral</h3>
-                <p class="white-text">O acompanhamento médico usa dois indicadores principais para monitorar a saúde do paciente:</p>
+                <h3 class="white-text">Marcadores de acompanhamento: CD4 e carga viral</h3>
+                <p class="white-text">O acompanhamento clínico se baseia, principalmente, em dois marcadores laboratoriais:</p>
                 
                 <div class="info-card-light" style="margin-top: 20px;">
-                    <h4 class="card-title">1. Contagem de CD4 (A Força do Sistema)</h4>
-                    <p>Mede a quantidade de células de defesa no sangue. <strong>Se o CD4 está alto (acima de 500), o sistema está forte.</strong> Se cai para menos de 200 células/mm³, o risco de doenças oportunistas (como as manifestações orais mais graves) é muito alto.</p>
-                    <h4 class="card-title" style="margin-top: 15px;">2. Carga Viral (A Quantidade de Vírus)</h4>
-                    <p>Mede a quantidade de vírus circulando. <strong>O objetivo do tratamento é torná-la Indetectável.</strong></p>
+                    <h4 class="card-title">1. Contagem de CD4 (força do sistema imunológico)</h4>
+                    <p>
+                        Mede a quantidade de linfócitos T CD4+ por milímetro cúbico de sangue. 
+                        <strong>Valores acima de 500 células/mm³</strong> indicam imunidade preservada. 
+                        <strong>Valores abaixo de 200 células/mm³</strong> representam alto risco de doenças oportunistas, incluindo manifestações orais mais graves.
+                    </p>
+
+                    <h4 class="card-title" style="margin-top: 15px;">2. Carga viral (quantidade de vírus circulante)</h4>
+                    <p>
+                        Mede a quantidade de HIV presente no sangue. 
+                        O objetivo da TARV é torná-la <strong>indetectável</strong>, ou seja, tão baixa que o exame laboratorial não consiga quantificar. 
+                        Isso está diretamente relacionado ao conceito de I = I.
+                    </p>
                 </div>
 
-                <h3 class="white-text">Indetectável = Intransmissível (I=I)</h3>
-                <p class="white-text">Quando a carga viral é mantida indetectável por seis meses ou mais, a pessoa com HIV <strong>não transmite o vírus</strong> por via sexual. Este é o poder da ciência e do tratamento, e é a principal mensagem para desmistificar o HIV hoje. O dentista precisa ter essa informação clara para oferecer um atendimento acolhedor e seguro.</p>
+                <h3 class="white-text">Indetectável = Intransmissível (I = I)</h3>
+                <p class="white-text">
+                    Quando a carga viral permanece indetectável por pelo menos seis meses, com uso regular da TARV e acompanhamento médico, a pessoa vivendo com HIV <strong>não transmite o vírus por via sexual</strong>. 
+                    Essa é uma das mensagens mais importantes da atualidade, pois reduz o estigma, incentiva a testagem e reforça a adesão ao tratamento.
+                </p>
+                <p class="white-text">
+                    Para o cirurgião-dentista, compreender esse conceito é fundamental para oferecer um atendimento acolhedor, seguro e livre de preconceitos, reforçando a visão de que o paciente não é apenas um portador de vírus, mas um indivíduo com direito a cuidado integral.
+                </p>
             </div>
         </section>
     </main>
     
     <footer>
-        <p>&copy; 2025 - Trabalho acadêmico sobre Manifestações Orais do HIV.</p>
+        <p>&copy; 2025 &mdash; Trabalho acadêmico sobre Manifestações Orais do HIV.</p>
         <p><a href="referencias.html">Recursos e Referências</a></p>
     </footer>
-     <script>
-        function clickmenu() {
-            if (itens.style.display == 'block') {
 
-                itens.style.display = 'none'
-            } else{
-                itens.style.display = 'block'   
+    <script>
+        function clickmenu() {
+            const itens = document.getElementById('itens');
+            if (itens.style.display === 'block') {
+                itens.style.display = 'none';
+            } else {
+                itens.style.display = 'block';
             }
         }
-            
-            
-
     </script>
 </body>
 </html>
